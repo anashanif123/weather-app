@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+       
+        <div class="weather-container" data-aos="fade-up">
+            <h2>Select City:</h2>
+            <select style="cursor: pointer;" id="city-select">
+                <option value="24.8607,67.0011">Karachi</option>
+                <option value="21.4241,39.8173">Makkah</option>
+                <option value="40.7128,-74.0060">New York</option>
+                <option value="34.0522,-118.2437">Los Angeles</option>
+                <option value="35.6895,139.6917">Tokyo</option>
+                <option value="51.5074,-0.1278">London</option>
+                <option value="31.5497,74.3436">Lahore</option>
+                <option value="33.6844,73.0479">Islamabad</option>
+                <option value="30.3753,69.3451">Kohlu</option>
+                <option value="32.5597,71.5285">Mianwali</option>
+            </select>
+            
+
+            <div class="weather-info">
+                <h2 >Weather in <span id="city-name"></span></h2 >
+                <p><strong>Temperature:</strong> <span id="temperature"></span> °C<span><i class="fa-solid fa-temperature-low"></i></span></p>
+                <p><strong>Description:</strong> <span id="description"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%<i class="fa-solid fa-water"></i></p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s<i class="fa-solid fa-wind"></i></p>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        
+    </body>
+</html>
